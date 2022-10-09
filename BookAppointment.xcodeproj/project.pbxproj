@@ -1,0 +1,849 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		553E50E728D8439B002830E8 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553E50E528D8439A002830E8 /* SearchBarViewController.swift */; };
+		553E50EA28D843D1002830E8 /* SearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 553E50E928D843D1002830E8 /* SearchBar.storyboard */; };
+		554339A628DD8B62009A98B2 /* CatagoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554339A528DD8B62009A98B2 /* CatagoriesViewModel.swift */; };
+		5548299F28C9C3F7004E6EC0 /* VisitHoursTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5548299D28C9C3F7004E6EC0 /* VisitHoursTableViewCell.swift */; };
+		554829A028C9C3F7004E6EC0 /* VisitHoursTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5548299E28C9C3F7004E6EC0 /* VisitHoursTableViewCell.xib */; };
+		554829A328C9C40D004E6EC0 /* VisitHoursCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554829A128C9C40D004E6EC0 /* VisitHoursCollectionViewCell.swift */; };
+		554829A428C9C40D004E6EC0 /* VisitHoursCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554829A228C9C40D004E6EC0 /* VisitHoursCollectionViewCell.xib */; };
+		55517B1B28C1CEBD00D4FC2E /* DoctorDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55517B1A28C1CEBD00D4FC2E /* DoctorDetails.storyboard */; };
+		55517B1E28C1D94400D4FC2E /* DoctorDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55517B1D28C1D94400D4FC2E /* DoctorDetailViewModel.swift */; };
+		555DE15828AE48B500C294DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DE15728AE48B500C294DD /* AppDelegate.swift */; };
+		555DE15A28AE48B500C294DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DE15928AE48B500C294DD /* SceneDelegate.swift */; };
+		555DE15C28AE48B500C294DD /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DE15B28AE48B500C294DD /* BookAppointmentViewController.swift */; };
+		555DE15F28AE48B500C294DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555DE15D28AE48B500C294DD /* Main.storyboard */; };
+		555DE16128AE48B700C294DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 555DE16028AE48B700C294DD /* Assets.xcassets */; };
+		555DE16428AE48B700C294DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 555DE16228AE48B700C294DD /* LaunchScreen.storyboard */; };
+		555DE16D28AE585300C294DD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DE16C28AE585300C294DD /* Extension.swift */; };
+		555DE17028AE58E900C294DD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555DE16F28AE58E900C294DD /* Colors.swift */; };
+		5574AC9728C85FAC00AECF19 /* DetailLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574AC9528C85FAC00AECF19 /* DetailLabelTableViewCell.swift */; };
+		5574AC9828C85FAC00AECF19 /* DetailLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5574AC9628C85FAC00AECF19 /* DetailLabelTableViewCell.xib */; };
+		5574AC9B28C85FC400AECF19 /* DetailLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574AC9928C85FC400AECF19 /* DetailLabelCollectionViewCell.swift */; };
+		5574AC9C28C85FC400AECF19 /* DetailLabelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5574AC9A28C85FC400AECF19 /* DetailLabelCollectionViewCell.xib */; };
+		5577A59628BDE97D00EE0C73 /* DoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577A59428BDE97D00EE0C73 /* DoctorTableViewCell.swift */; };
+		5577A59728BDE97D00EE0C73 /* DoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5577A59528BDE97D00EE0C73 /* DoctorTableViewCell.xib */; };
+		5577A59A28BDEE0A00EE0C73 /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577A59928BDEE0A00EE0C73 /* DoctorModel.swift */; };
+		5577A59C28BDEE7800EE0C73 /* DoctorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577A59B28BDEE7800EE0C73 /* DoctorData.swift */; };
+		558B357C28D998BD0085F3F1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558B357B28D998BD0085F3F1 /* SearchViewModel.swift */; };
+		55B19EB028C0AAD4007BD3C4 /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B19EAE28C0AAD4007BD3C4 /* DoctorDetailsViewController.swift */; };
+		55B19EB628C0ABB4007BD3C4 /* AboutDoctorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B19EB428C0ABB4007BD3C4 /* AboutDoctorTableViewCell.swift */; };
+		55B19EB728C0ABB4007BD3C4 /* AboutDoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B19EB528C0ABB4007BD3C4 /* AboutDoctorTableViewCell.xib */; };
+		55BA7FFE28E43F8500AC7ACC /* MedicineCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BA7FFC28E43F8500AC7ACC /* MedicineCellCollectionViewCell.swift */; };
+		55BA7FFF28E43F8500AC7ACC /* MedicineCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55BA7FFD28E43F8500AC7ACC /* MedicineCellCollectionViewCell.xib */; };
+		55BA800128E4415200AC7ACC /* MedicineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BA800028E4415200AC7ACC /* MedicineModel.swift */; };
+		55CE8DB628E1776000C0EA18 /* AmbulanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE8DB428E1776000C0EA18 /* AmbulanceTableViewCell.swift */; };
+		55CE8DB728E1776000C0EA18 /* AmbulanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CE8DB528E1776000C0EA18 /* AmbulanceTableViewCell.xib */; };
+		55CE8DB928E17EA100C0EA18 /* AmbulanceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE8DB828E17EA100C0EA18 /* AmbulanceModel.swift */; };
+		55E680EF28BC88120004194F /* BookAppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E680EE28BC88120004194F /* BookAppointmentViewModel.swift */; };
+		55E680F328BC89360004194F /* LabelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E680F128BC89360004194F /* LabelViewCell.swift */; };
+		55E680F428BC89360004194F /* LabelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E680F228BC89360004194F /* LabelViewCell.xib */; };
+		55E680F728BC8BFF0004194F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E680F628BC8BFF0004194F /* Configuration.swift */; };
+		55E680FC28BCA6550004194F /* CatagoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E680FA28BCA6550004194F /* CatagoriesCollectionViewCell.swift */; };
+		55E680FD28BCA6550004194F /* CatagoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E680FB28BCA6550004194F /* CatagoriesCollectionViewCell.xib */; };
+		55E6810128BCB1900004194F /* TransferTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E680FF28BCB1900004194F /* TransferTableViewCell.swift */; };
+		55E6810428BCB30B0004194F /* TransferTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E6810328BCB30B0004194F /* TransferTableViewCell.xib */; };
+		55F8A4D628DC37CC0027FF68 /* AllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4D528DC37CC0027FF68 /* AllViewController.swift */; };
+		55F8A4D828DC37DB0027FF68 /* CardiologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4D728DC37DB0027FF68 /* CardiologistViewController.swift */; };
+		55F8A4DA28DC37E60027FF68 /* MedicineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4D928DC37E60027FF68 /* MedicineViewController.swift */; };
+		55F8A4DC28DC381B0027FF68 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4DB28DC381B0027FF68 /* GeneralViewController.swift */; };
+		55F8A4DE28DC38270027FF68 /* AmbulanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4DD28DC38270027FF68 /* AmbulanceViewController.swift */; };
+		55F8A4E028DC38340027FF68 /* FindClinicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4DF28DC38340027FF68 /* FindClinicViewController.swift */; };
+		55F8A4E328DC38B10027FF68 /* AllCatagories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4E228DC38B10027FF68 /* AllCatagories.storyboard */; };
+		55F8A4E528DC38BC0027FF68 /* Cardiologist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4E428DC38BC0027FF68 /* Cardiologist.storyboard */; };
+		55F8A4E728DC38CE0027FF68 /* FindClinic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4E628DC38CE0027FF68 /* FindClinic.storyboard */; };
+		55F8A4E928DC38DA0027FF68 /* Ambulance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4E828DC38DA0027FF68 /* Ambulance.storyboard */; };
+		55F8A4EB28DC38E80027FF68 /* Medicine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4EA28DC38E80027FF68 /* Medicine.storyboard */; };
+		55F8A4ED28DC3A5F0027FF68 /* General.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4EC28DC3A5E0027FF68 /* General.storyboard */; };
+		55F8A4F128DC4AB70027FF68 /* CardiologistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4EF28DC4AB70027FF68 /* CardiologistTableViewCell.swift */; };
+		55F8A4F228DC4AB70027FF68 /* CardiologistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F8A4F028DC4AB70027FF68 /* CardiologistTableViewCell.xib */; };
+		55F8A4F428DC4EB70027FF68 /* CardiologistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8A4F328DC4EB70027FF68 /* CardiologistModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		553E50E528D8439A002830E8 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		553E50E928D843D1002830E8 /* SearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchBar.storyboard; sourceTree = "<group>"; };
+		554339A528DD8B62009A98B2 /* CatagoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesViewModel.swift; sourceTree = "<group>"; };
+		5548299D28C9C3F7004E6EC0 /* VisitHoursTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitHoursTableViewCell.swift; sourceTree = "<group>"; };
+		5548299E28C9C3F7004E6EC0 /* VisitHoursTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitHoursTableViewCell.xib; sourceTree = "<group>"; };
+		554829A128C9C40D004E6EC0 /* VisitHoursCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitHoursCollectionViewCell.swift; sourceTree = "<group>"; };
+		554829A228C9C40D004E6EC0 /* VisitHoursCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitHoursCollectionViewCell.xib; sourceTree = "<group>"; };
+		55517B1A28C1CEBD00D4FC2E /* DoctorDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoctorDetails.storyboard; sourceTree = "<group>"; };
+		55517B1D28C1D94400D4FC2E /* DoctorDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailViewModel.swift; sourceTree = "<group>"; };
+		555DE15428AE48B500C294DD /* BookAppointment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookAppointment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		555DE15728AE48B500C294DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		555DE15928AE48B500C294DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		555DE15B28AE48B500C294DD /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		555DE15E28AE48B500C294DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		555DE16028AE48B700C294DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		555DE16328AE48B700C294DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		555DE16528AE48B700C294DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		555DE16C28AE585300C294DD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		555DE16F28AE58E900C294DD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5574AC9528C85FAC00AECF19 /* DetailLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabelTableViewCell.swift; sourceTree = "<group>"; };
+		5574AC9628C85FAC00AECF19 /* DetailLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailLabelTableViewCell.xib; sourceTree = "<group>"; };
+		5574AC9928C85FC400AECF19 /* DetailLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		5574AC9A28C85FC400AECF19 /* DetailLabelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailLabelCollectionViewCell.xib; sourceTree = "<group>"; };
+		5577A59428BDE97D00EE0C73 /* DoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTableViewCell.swift; sourceTree = "<group>"; };
+		5577A59528BDE97D00EE0C73 /* DoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorTableViewCell.xib; sourceTree = "<group>"; };
+		5577A59928BDEE0A00EE0C73 /* DoctorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
+		5577A59B28BDEE7800EE0C73 /* DoctorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorData.swift; sourceTree = "<group>"; };
+		558B357B28D998BD0085F3F1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		55B19EAE28C0AAD4007BD3C4 /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
+		55B19EB428C0ABB4007BD3C4 /* AboutDoctorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutDoctorTableViewCell.swift; sourceTree = "<group>"; };
+		55B19EB528C0ABB4007BD3C4 /* AboutDoctorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutDoctorTableViewCell.xib; sourceTree = "<group>"; };
+		55BA7FFC28E43F8500AC7ACC /* MedicineCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		55BA7FFD28E43F8500AC7ACC /* MedicineCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicineCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		55BA800028E4415200AC7ACC /* MedicineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineModel.swift; sourceTree = "<group>"; };
+		55CE8DB428E1776000C0EA18 /* AmbulanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbulanceTableViewCell.swift; sourceTree = "<group>"; };
+		55CE8DB528E1776000C0EA18 /* AmbulanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmbulanceTableViewCell.xib; sourceTree = "<group>"; };
+		55CE8DB828E17EA100C0EA18 /* AmbulanceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbulanceModel.swift; sourceTree = "<group>"; };
+		55E680EE28BC88120004194F /* BookAppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewModel.swift; sourceTree = "<group>"; };
+		55E680F128BC89360004194F /* LabelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewCell.swift; sourceTree = "<group>"; };
+		55E680F228BC89360004194F /* LabelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelViewCell.xib; sourceTree = "<group>"; };
+		55E680F628BC8BFF0004194F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		55E680FA28BCA6550004194F /* CatagoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		55E680FB28BCA6550004194F /* CatagoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		55E680FF28BCB1900004194F /* TransferTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewCell.swift; sourceTree = "<group>"; };
+		55E6810328BCB30B0004194F /* TransferTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TransferTableViewCell.xib; path = "../../../../../ios-dgswitch2.0/DGSwitch/DGSwitch/ViewController/Dashboard/TransferOption/TransferTableViewCell.xib"; sourceTree = "<group>"; };
+		55F8A4D528DC37CC0027FF68 /* AllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllViewController.swift; sourceTree = "<group>"; };
+		55F8A4D728DC37DB0027FF68 /* CardiologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardiologistViewController.swift; sourceTree = "<group>"; };
+		55F8A4D928DC37E60027FF68 /* MedicineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineViewController.swift; sourceTree = "<group>"; };
+		55F8A4DB28DC381B0027FF68 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		55F8A4DD28DC38270027FF68 /* AmbulanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmbulanceViewController.swift; sourceTree = "<group>"; };
+		55F8A4DF28DC38340027FF68 /* FindClinicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindClinicViewController.swift; sourceTree = "<group>"; };
+		55F8A4E228DC38B10027FF68 /* AllCatagories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllCatagories.storyboard; sourceTree = "<group>"; };
+		55F8A4E428DC38BC0027FF68 /* Cardiologist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cardiologist.storyboard; sourceTree = "<group>"; };
+		55F8A4E628DC38CE0027FF68 /* FindClinic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindClinic.storyboard; sourceTree = "<group>"; };
+		55F8A4E828DC38DA0027FF68 /* Ambulance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ambulance.storyboard; sourceTree = "<group>"; };
+		55F8A4EA28DC38E80027FF68 /* Medicine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Medicine.storyboard; sourceTree = "<group>"; };
+		55F8A4EC28DC3A5E0027FF68 /* General.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = General.storyboard; sourceTree = "<group>"; };
+		55F8A4EF28DC4AB70027FF68 /* CardiologistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardiologistTableViewCell.swift; sourceTree = "<group>"; };
+		55F8A4F028DC4AB70027FF68 /* CardiologistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardiologistTableViewCell.xib; sourceTree = "<group>"; };
+		55F8A4F328DC4EB70027FF68 /* CardiologistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardiologistModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		555DE15128AE48B500C294DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		553E50E428D84373002830E8 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				558B357A28D998AA0085F3F1 /* ViewModel */,
+				553E50E528D8439A002830E8 /* SearchBarViewController.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		5548299A28C9C3BB004E6EC0 /* VisitHoursCell */ = {
+			isa = PBXGroup;
+			children = (
+				5548299C28C9C3D5004E6EC0 /* VisitHourCollectionView */,
+				5548299B28C9C3C8004E6EC0 /* VisitHourTableView */,
+			);
+			path = VisitHoursCell;
+			sourceTree = "<group>";
+		};
+		5548299B28C9C3C8004E6EC0 /* VisitHourTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5548299D28C9C3F7004E6EC0 /* VisitHoursTableViewCell.swift */,
+				5548299E28C9C3F7004E6EC0 /* VisitHoursTableViewCell.xib */,
+			);
+			path = VisitHourTableView;
+			sourceTree = "<group>";
+		};
+		5548299C28C9C3D5004E6EC0 /* VisitHourCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				554829A128C9C40D004E6EC0 /* VisitHoursCollectionViewCell.swift */,
+				554829A228C9C40D004E6EC0 /* VisitHoursCollectionViewCell.xib */,
+			);
+			path = VisitHourCollectionView;
+			sourceTree = "<group>";
+		};
+		55517B1C28C1D93000D4FC2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55517B1D28C1D94400D4FC2E /* DoctorDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		555DE14B28AE48B500C294DD = {
+			isa = PBXGroup;
+			children = (
+				555DE15628AE48B500C294DD /* BookAppointment */,
+				555DE15528AE48B500C294DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		555DE15528AE48B500C294DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				555DE15428AE48B500C294DD /* BookAppointment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		555DE15628AE48B500C294DD /* BookAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				555DE16528AE48B700C294DD /* Info.plist */,
+				555DE15728AE48B500C294DD /* AppDelegate.swift */,
+				555DE15928AE48B500C294DD /* SceneDelegate.swift */,
+				555DE16028AE48B700C294DD /* Assets.xcassets */,
+				555DE16E28AE58DA00C294DD /* Colors */,
+				55E680EC28BC87A40004194F /* Components */,
+				555DE16B28AE583700C294DD /* Extensions */,
+				55E680F528BC8BEA0004194F /* Extras */,
+				5577A59828BDEDEF00EE0C73 /* Model */,
+				55F8A4E128DC383E0027FF68 /* Storyboard */,
+			);
+			path = BookAppointment;
+			sourceTree = "<group>";
+		};
+		555DE16B28AE583700C294DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				555DE16C28AE585300C294DD /* Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		555DE16E28AE58DA00C294DD /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				555DE16F28AE58E900C294DD /* Colors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		5574AC9328C85F7B00AECF19 /* DetailLabelTableView */ = {
+			isa = PBXGroup;
+			children = (
+				5574AC9528C85FAC00AECF19 /* DetailLabelTableViewCell.swift */,
+				5574AC9628C85FAC00AECF19 /* DetailLabelTableViewCell.xib */,
+			);
+			path = DetailLabelTableView;
+			sourceTree = "<group>";
+		};
+		5574AC9428C85F8F00AECF19 /* DetailLabelCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5574AC9928C85FC400AECF19 /* DetailLabelCollectionViewCell.swift */,
+				5574AC9A28C85FC400AECF19 /* DetailLabelCollectionViewCell.xib */,
+			);
+			path = DetailLabelCollectionView;
+			sourceTree = "<group>";
+		};
+		5577A59228BDD69500EE0C73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4CD28DC37390027FF68 /* Catagories */,
+				553E50E428D84373002830E8 /* SearchBar */,
+				55B19EB328C0AAED007BD3C4 /* BookAppointment */,
+				55B19EB228C0AADB007BD3C4 /* AboutDoctor */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5577A59328BDE96300EE0C73 /* DoctorCell */ = {
+			isa = PBXGroup;
+			children = (
+				5577A59428BDE97D00EE0C73 /* DoctorTableViewCell.swift */,
+				5577A59528BDE97D00EE0C73 /* DoctorTableViewCell.xib */,
+			);
+			path = DoctorCell;
+			sourceTree = "<group>";
+		};
+		5577A59828BDEDEF00EE0C73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5577A59928BDEE0A00EE0C73 /* DoctorModel.swift */,
+				5577A59B28BDEE7800EE0C73 /* DoctorData.swift */,
+				55F8A4F328DC4EB70027FF68 /* CardiologistModel.swift */,
+				55CE8DB828E17EA100C0EA18 /* AmbulanceModel.swift */,
+				55BA800028E4415200AC7ACC /* MedicineModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		558B357A28D998AA0085F3F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				558B357B28D998BD0085F3F1 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55B19EAD28C0AA99007BD3C4 /* AboutDoctorCell */ = {
+			isa = PBXGroup;
+			children = (
+				55B19EB428C0ABB4007BD3C4 /* AboutDoctorTableViewCell.swift */,
+				55B19EB528C0ABB4007BD3C4 /* AboutDoctorTableViewCell.xib */,
+			);
+			path = AboutDoctorCell;
+			sourceTree = "<group>";
+		};
+		55B19EB228C0AADB007BD3C4 /* AboutDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				55517B1C28C1D93000D4FC2E /* ViewModel */,
+				55B19EAE28C0AAD4007BD3C4 /* DoctorDetailsViewController.swift */,
+			);
+			path = AboutDoctor;
+			sourceTree = "<group>";
+		};
+		55B19EB328C0AAED007BD3C4 /* BookAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				55E680ED28BC87F00004194F /* ViewModels */,
+				555DE15B28AE48B500C294DD /* BookAppointmentViewController.swift */,
+			);
+			path = BookAppointment;
+			sourceTree = "<group>";
+		};
+		55BA7FFB28E43F6A00AC7ACC /* MedicineCell */ = {
+			isa = PBXGroup;
+			children = (
+				55BA7FFC28E43F8500AC7ACC /* MedicineCellCollectionViewCell.swift */,
+				55BA7FFD28E43F8500AC7ACC /* MedicineCellCollectionViewCell.xib */,
+			);
+			path = MedicineCell;
+			sourceTree = "<group>";
+		};
+		55BD6E4F28C75DBF00AB201E /* DetailLabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				5574AC9428C85F8F00AECF19 /* DetailLabelCollectionView */,
+				5574AC9328C85F7B00AECF19 /* DetailLabelTableView */,
+			);
+			path = DetailLabelCell;
+			sourceTree = "<group>";
+		};
+		55CE8DB328E1773500C0EA18 /* AmbulanceCell */ = {
+			isa = PBXGroup;
+			children = (
+				55CE8DB428E1776000C0EA18 /* AmbulanceTableViewCell.swift */,
+				55CE8DB528E1776000C0EA18 /* AmbulanceTableViewCell.xib */,
+			);
+			path = AmbulanceCell;
+			sourceTree = "<group>";
+		};
+		55E680EC28BC87A40004194F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5548299A28C9C3BB004E6EC0 /* VisitHoursCell */,
+				55BD6E4F28C75DBF00AB201E /* DetailLabelCell */,
+				55B19EAD28C0AA99007BD3C4 /* AboutDoctorCell */,
+				5577A59328BDE96300EE0C73 /* DoctorCell */,
+				5577A59228BDD69500EE0C73 /* ViewControllers */,
+				55E680FE28BCB1440004194F /* TransferCell */,
+				55E680F928BCA6180004194F /* CatagoriesCell */,
+				55E680F828BCA6030004194F /* LabelCell */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		55E680ED28BC87F00004194F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				55E680EE28BC88120004194F /* BookAppointmentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55E680F528BC8BEA0004194F /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				55E680F628BC8BFF0004194F /* Configuration.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		55E680F828BCA6030004194F /* LabelCell */ = {
+			isa = PBXGroup;
+			children = (
+				55E680F128BC89360004194F /* LabelViewCell.swift */,
+				55E680F228BC89360004194F /* LabelViewCell.xib */,
+			);
+			path = LabelCell;
+			sourceTree = "<group>";
+		};
+		55E680F928BCA6180004194F /* CatagoriesCell */ = {
+			isa = PBXGroup;
+			children = (
+				55E680FA28BCA6550004194F /* CatagoriesCollectionViewCell.swift */,
+				55E680FB28BCA6550004194F /* CatagoriesCollectionViewCell.xib */,
+			);
+			path = CatagoriesCell;
+			sourceTree = "<group>";
+		};
+		55E680FE28BCB1440004194F /* TransferCell */ = {
+			isa = PBXGroup;
+			children = (
+				55E6810328BCB30B0004194F /* TransferTableViewCell.xib */,
+				55E680FF28BCB1900004194F /* TransferTableViewCell.swift */,
+			);
+			path = TransferCell;
+			sourceTree = "<group>";
+		};
+		55F8A4CD28DC37390027FF68 /* Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				554339A528DD8B62009A98B2 /* CatagoriesViewModel.swift */,
+				55F8A4D328DC37800027FF68 /* FindClinic */,
+				55F8A4D228DC37780027FF68 /* Ambulance */,
+				55F8A4D128DC376F0027FF68 /* General */,
+				55F8A4D028DC37680027FF68 /* Medicine */,
+				55F8A4CF28DC375D0027FF68 /* Cardiologist */,
+				55F8A4CE28DC37470027FF68 /* AllViewController */,
+			);
+			path = Catagories;
+			sourceTree = "<group>";
+		};
+		55F8A4CE28DC37470027FF68 /* AllViewController */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4D528DC37CC0027FF68 /* AllViewController.swift */,
+			);
+			path = AllViewController;
+			sourceTree = "<group>";
+		};
+		55F8A4CF28DC375D0027FF68 /* Cardiologist */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4EE28DC4A970027FF68 /* CardiologistCell */,
+				55F8A4D728DC37DB0027FF68 /* CardiologistViewController.swift */,
+			);
+			path = Cardiologist;
+			sourceTree = "<group>";
+		};
+		55F8A4D028DC37680027FF68 /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				55BA7FFB28E43F6A00AC7ACC /* MedicineCell */,
+				55F8A4D928DC37E60027FF68 /* MedicineViewController.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		55F8A4D128DC376F0027FF68 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4DB28DC381B0027FF68 /* GeneralViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		55F8A4D228DC37780027FF68 /* Ambulance */ = {
+			isa = PBXGroup;
+			children = (
+				55CE8DB328E1773500C0EA18 /* AmbulanceCell */,
+				55F8A4DD28DC38270027FF68 /* AmbulanceViewController.swift */,
+			);
+			path = Ambulance;
+			sourceTree = "<group>";
+		};
+		55F8A4D328DC37800027FF68 /* FindClinic */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4DF28DC38340027FF68 /* FindClinicViewController.swift */,
+			);
+			path = FindClinic;
+			sourceTree = "<group>";
+		};
+		55F8A4E128DC383E0027FF68 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				555DE16228AE48B700C294DD /* LaunchScreen.storyboard */,
+				55517B1A28C1CEBD00D4FC2E /* DoctorDetails.storyboard */,
+				553E50E928D843D1002830E8 /* SearchBar.storyboard */,
+				555DE15D28AE48B500C294DD /* Main.storyboard */,
+				55F8A4E228DC38B10027FF68 /* AllCatagories.storyboard */,
+				55F8A4E428DC38BC0027FF68 /* Cardiologist.storyboard */,
+				55F8A4E628DC38CE0027FF68 /* FindClinic.storyboard */,
+				55F8A4E828DC38DA0027FF68 /* Ambulance.storyboard */,
+				55F8A4EA28DC38E80027FF68 /* Medicine.storyboard */,
+				55F8A4EC28DC3A5E0027FF68 /* General.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		55F8A4EE28DC4A970027FF68 /* CardiologistCell */ = {
+			isa = PBXGroup;
+			children = (
+				55F8A4EF28DC4AB70027FF68 /* CardiologistTableViewCell.swift */,
+				55F8A4F028DC4AB70027FF68 /* CardiologistTableViewCell.xib */,
+			);
+			path = CardiologistCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		555DE15328AE48B500C294DD /* BookAppointment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 555DE16828AE48B700C294DD /* Build configuration list for PBXNativeTarget "BookAppointment" */;
+			buildPhases = (
+				555DE15028AE48B500C294DD /* Sources */,
+				555DE15128AE48B500C294DD /* Frameworks */,
+				555DE15228AE48B500C294DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BookAppointment;
+			productName = BookAppointment;
+			productReference = 555DE15428AE48B500C294DD /* BookAppointment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		555DE14C28AE48B500C294DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					555DE15328AE48B500C294DD = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 555DE14F28AE48B500C294DD /* Build configuration list for PBXProject "BookAppointment" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 555DE14B28AE48B500C294DD;
+			productRefGroup = 555DE15528AE48B500C294DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				555DE15328AE48B500C294DD /* BookAppointment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		555DE15228AE48B500C294DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F8A4EB28DC38E80027FF68 /* Medicine.storyboard in Resources */,
+				553E50EA28D843D1002830E8 /* SearchBar.storyboard in Resources */,
+				55B19EB728C0ABB4007BD3C4 /* AboutDoctorTableViewCell.xib in Resources */,
+				55F8A4E728DC38CE0027FF68 /* FindClinic.storyboard in Resources */,
+				55F8A4F228DC4AB70027FF68 /* CardiologistTableViewCell.xib in Resources */,
+				55F8A4E528DC38BC0027FF68 /* Cardiologist.storyboard in Resources */,
+				555DE16428AE48B700C294DD /* LaunchScreen.storyboard in Resources */,
+				55E680FD28BCA6550004194F /* CatagoriesCollectionViewCell.xib in Resources */,
+				554829A028C9C3F7004E6EC0 /* VisitHoursTableViewCell.xib in Resources */,
+				5574AC9C28C85FC400AECF19 /* DetailLabelCollectionViewCell.xib in Resources */,
+				554829A428C9C40D004E6EC0 /* VisitHoursCollectionViewCell.xib in Resources */,
+				5577A59728BDE97D00EE0C73 /* DoctorTableViewCell.xib in Resources */,
+				55F8A4ED28DC3A5F0027FF68 /* General.storyboard in Resources */,
+				55E6810428BCB30B0004194F /* TransferTableViewCell.xib in Resources */,
+				55CE8DB728E1776000C0EA18 /* AmbulanceTableViewCell.xib in Resources */,
+				55E680F428BC89360004194F /* LabelViewCell.xib in Resources */,
+				555DE16128AE48B700C294DD /* Assets.xcassets in Resources */,
+				55517B1B28C1CEBD00D4FC2E /* DoctorDetails.storyboard in Resources */,
+				55BA7FFF28E43F8500AC7ACC /* MedicineCellCollectionViewCell.xib in Resources */,
+				55F8A4E328DC38B10027FF68 /* AllCatagories.storyboard in Resources */,
+				555DE15F28AE48B500C294DD /* Main.storyboard in Resources */,
+				5574AC9828C85FAC00AECF19 /* DetailLabelTableViewCell.xib in Resources */,
+				55F8A4E928DC38DA0027FF68 /* Ambulance.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		555DE15028AE48B500C294DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55BA7FFE28E43F8500AC7ACC /* MedicineCellCollectionViewCell.swift in Sources */,
+				558B357C28D998BD0085F3F1 /* SearchViewModel.swift in Sources */,
+				55517B1E28C1D94400D4FC2E /* DoctorDetailViewModel.swift in Sources */,
+				55CE8DB628E1776000C0EA18 /* AmbulanceTableViewCell.swift in Sources */,
+				55E6810128BCB1900004194F /* TransferTableViewCell.swift in Sources */,
+				55F8A4DA28DC37E60027FF68 /* MedicineViewController.swift in Sources */,
+				555DE15C28AE48B500C294DD /* BookAppointmentViewController.swift in Sources */,
+				55E680F328BC89360004194F /* LabelViewCell.swift in Sources */,
+				55E680EF28BC88120004194F /* BookAppointmentViewModel.swift in Sources */,
+				555DE17028AE58E900C294DD /* Colors.swift in Sources */,
+				5574AC9B28C85FC400AECF19 /* DetailLabelCollectionViewCell.swift in Sources */,
+				555DE15828AE48B500C294DD /* AppDelegate.swift in Sources */,
+				5577A59628BDE97D00EE0C73 /* DoctorTableViewCell.swift in Sources */,
+				55F8A4F428DC4EB70027FF68 /* CardiologistModel.swift in Sources */,
+				555DE15A28AE48B500C294DD /* SceneDelegate.swift in Sources */,
+				55B19EB628C0ABB4007BD3C4 /* AboutDoctorTableViewCell.swift in Sources */,
+				5577A59A28BDEE0A00EE0C73 /* DoctorModel.swift in Sources */,
+				5548299F28C9C3F7004E6EC0 /* VisitHoursTableViewCell.swift in Sources */,
+				55F8A4E028DC38340027FF68 /* FindClinicViewController.swift in Sources */,
+				55F8A4DE28DC38270027FF68 /* AmbulanceViewController.swift in Sources */,
+				554339A628DD8B62009A98B2 /* CatagoriesViewModel.swift in Sources */,
+				55CE8DB928E17EA100C0EA18 /* AmbulanceModel.swift in Sources */,
+				55B19EB028C0AAD4007BD3C4 /* DoctorDetailsViewController.swift in Sources */,
+				55F8A4D628DC37CC0027FF68 /* AllViewController.swift in Sources */,
+				553E50E728D8439B002830E8 /* SearchBarViewController.swift in Sources */,
+				55F8A4F128DC4AB70027FF68 /* CardiologistTableViewCell.swift in Sources */,
+				55E680F728BC8BFF0004194F /* Configuration.swift in Sources */,
+				55BA800128E4415200AC7ACC /* MedicineModel.swift in Sources */,
+				55F8A4DC28DC381B0027FF68 /* GeneralViewController.swift in Sources */,
+				5577A59C28BDEE7800EE0C73 /* DoctorData.swift in Sources */,
+				554829A328C9C40D004E6EC0 /* VisitHoursCollectionViewCell.swift in Sources */,
+				55F8A4D828DC37DB0027FF68 /* CardiologistViewController.swift in Sources */,
+				555DE16D28AE585300C294DD /* Extension.swift in Sources */,
+				55E680FC28BCA6550004194F /* CatagoriesCollectionViewCell.swift in Sources */,
+				5574AC9728C85FAC00AECF19 /* DetailLabelTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		555DE15D28AE48B500C294DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				555DE15E28AE48B500C294DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		555DE16228AE48B700C294DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				555DE16328AE48B700C294DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		555DE16628AE48B700C294DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		555DE16728AE48B700C294DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		555DE16928AE48B700C294DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33ZGL3A862;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookAppointment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perennialsys.BookAppointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		555DE16A28AE48B700C294DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33ZGL3A862;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookAppointment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.perennialsys.BookAppointment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		555DE14F28AE48B500C294DD /* Build configuration list for PBXProject "BookAppointment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555DE16628AE48B700C294DD /* Debug */,
+				555DE16728AE48B700C294DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		555DE16828AE48B700C294DD /* Build configuration list for PBXNativeTarget "BookAppointment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				555DE16928AE48B700C294DD /* Debug */,
+				555DE16A28AE48B700C294DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 555DE14C28AE48B500C294DD /* Project object */;
+}

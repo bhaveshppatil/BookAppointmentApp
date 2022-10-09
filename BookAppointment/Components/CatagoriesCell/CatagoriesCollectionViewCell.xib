@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CatagoriesCollectionViewCell" customModule="BookAppointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Txh-ka-Sfs">
+                        <rect key="frame" x="15" y="10" width="78" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vko-FK-4DT">
+                                <rect key="frame" x="10" y="10" width="58" height="40"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="IHw-xC-3Fa"/>
+                            <constraint firstAttribute="bottom" secondItem="vko-FK-4DT" secondAttribute="bottom" constant="10" id="MPN-GR-PfI"/>
+                            <constraint firstItem="vko-FK-4DT" firstAttribute="leading" secondItem="Txh-ka-Sfs" secondAttribute="leading" constant="10" id="aAo-ok-plP"/>
+                            <constraint firstItem="vko-FK-4DT" firstAttribute="centerX" secondItem="Txh-ka-Sfs" secondAttribute="centerX" id="gIi-BO-x8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="vko-FK-4DT" secondAttribute="trailing" constant="10" id="jMC-92-NRQ"/>
+                            <constraint firstAttribute="width" constant="78" id="m0o-7v-FeA"/>
+                            <constraint firstItem="vko-FK-4DT" firstAttribute="top" secondItem="Txh-ka-Sfs" secondAttribute="top" constant="10" id="wv1-LX-65B"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mop-P7-Ge5">
+                        <rect key="frame" x="37.5" y="75" width="33" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Mop-P7-Ge5" firstAttribute="top" secondItem="Txh-ka-Sfs" secondAttribute="bottom" constant="5" id="9rh-bV-21H"/>
+                <constraint firstAttribute="bottom" secondItem="Mop-P7-Ge5" secondAttribute="bottom" constant="5" id="HB6-2B-rwx"/>
+                <constraint firstItem="Mop-P7-Ge5" firstAttribute="centerX" secondItem="Txh-ka-Sfs" secondAttribute="centerX" id="Tr3-rf-wRl"/>
+                <constraint firstAttribute="trailing" secondItem="Txh-ka-Sfs" secondAttribute="trailing" constant="15" id="V4g-iI-NcJ"/>
+                <constraint firstItem="Txh-ka-Sfs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="enP-uq-aWf"/>
+                <constraint firstItem="Txh-ka-Sfs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="yMt-HC-ulm"/>
+            </constraints>
+            <size key="customSize" width="108" height="116"/>
+            <connections>
+                <outlet property="catagoriesLabel" destination="Mop-P7-Ge5" id="dRH-uP-3hT"/>
+                <outlet property="catagoryImageView" destination="vko-FK-4DT" id="8Ls-xe-K9S"/>
+                <outlet property="imageContainerView" destination="Txh-ka-Sfs" id="WYz-7r-p4f"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="119.86607142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

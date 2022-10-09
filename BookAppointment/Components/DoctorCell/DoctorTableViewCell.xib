@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="DoctorTableViewCell" customModule="BookAppointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hom-Ur-0gf">
+                        <rect key="frame" x="10" y="10" width="329" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doctor7" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-To-kh8">
+                                <rect key="frame" x="15" y="10" width="70" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="8bv-3o-MAn"/>
+                                    <constraint firstAttribute="height" constant="71" id="I5Y-Px-pMC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsu-M7-lTo">
+                                <rect key="frame" x="100" y="10" width="214" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speciality, Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-3Z-W7q">
+                                <rect key="frame" x="100" y="38.5" width="214" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBp-Es-zeg">
+                                <rect key="frame" x="100" y="63" width="100.5" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1hR-sZ-1fy"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Appointment">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyK-3z-ZUg">
+                                <rect key="frame" x="15" y="86" width="70" height="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Hoz-3Z-W7q" secondAttribute="trailing" constant="15" id="0yE-4Z-CWu"/>
+                            <constraint firstItem="bBp-Es-zeg" firstAttribute="leading" secondItem="RkD-To-kh8" secondAttribute="trailing" constant="15" id="2k4-qM-Ky7"/>
+                            <constraint firstItem="RkD-To-kh8" firstAttribute="top" secondItem="hom-Ur-0gf" secondAttribute="top" constant="10" id="9nG-Ty-xhL"/>
+                            <constraint firstAttribute="bottom" secondItem="bBp-Es-zeg" secondAttribute="bottom" constant="17" id="CDM-7A-kxB"/>
+                            <constraint firstAttribute="bottom" secondItem="oyK-3z-ZUg" secondAttribute="bottom" constant="10" id="FWx-Jf-DXR"/>
+                            <constraint firstItem="bBp-Es-zeg" firstAttribute="top" secondItem="Hoz-3Z-W7q" secondAttribute="bottom" constant="10" id="JKH-ff-emW"/>
+                            <constraint firstItem="oyK-3z-ZUg" firstAttribute="top" secondItem="RkD-To-kh8" secondAttribute="bottom" constant="5" id="KQQ-DW-CeV"/>
+                            <constraint firstItem="Hoz-3Z-W7q" firstAttribute="top" secondItem="zsu-M7-lTo" secondAttribute="bottom" constant="8" id="Ohy-A8-Usl"/>
+                            <constraint firstItem="oyK-3z-ZUg" firstAttribute="trailing" secondItem="RkD-To-kh8" secondAttribute="trailing" id="S0P-Bb-hzV"/>
+                            <constraint firstItem="Hoz-3Z-W7q" firstAttribute="leading" secondItem="RkD-To-kh8" secondAttribute="trailing" constant="15" id="YhQ-y6-tnl"/>
+                            <constraint firstItem="RkD-To-kh8" firstAttribute="leading" secondItem="hom-Ur-0gf" secondAttribute="leading" constant="15" id="b9c-O9-gtE"/>
+                            <constraint firstAttribute="trailing" secondItem="zsu-M7-lTo" secondAttribute="trailing" constant="15" id="lyW-FG-ZzQ"/>
+                            <constraint firstItem="zsu-M7-lTo" firstAttribute="top" secondItem="hom-Ur-0gf" secondAttribute="top" constant="10" id="nam-wP-QzC"/>
+                            <constraint firstItem="zsu-M7-lTo" firstAttribute="leading" secondItem="RkD-To-kh8" secondAttribute="trailing" constant="15" id="qrM-Ma-N9m"/>
+                            <constraint firstItem="oyK-3z-ZUg" firstAttribute="leading" secondItem="RkD-To-kh8" secondAttribute="leading" id="w24-gZ-ELZ"/>
+                            <constraint firstItem="oyK-3z-ZUg" firstAttribute="centerX" secondItem="RkD-To-kh8" secondAttribute="centerX" id="xh6-rO-w79"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hom-Ur-0gf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="HvW-eH-oAZ"/>
+                    <constraint firstAttribute="trailing" secondItem="hom-Ur-0gf" secondAttribute="trailing" constant="10" id="YAI-N3-1Sz"/>
+                    <constraint firstAttribute="bottom" secondItem="hom-Ur-0gf" secondAttribute="bottom" constant="10" id="dpC-lu-wdH"/>
+                    <constraint firstItem="hom-Ur-0gf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="mqS-Nz-crz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="appointmentButton" destination="bBp-Es-zeg" id="o8Q-kU-KGg"/>
+                <outlet property="containerVIew" destination="hom-Ur-0gf" id="zle-Va-Bfy"/>
+                <outlet property="doctorImage" destination="RkD-To-kh8" id="AJJ-Kj-3Ew"/>
+                <outlet property="doctorNameLbl" destination="zsu-M7-lTo" id="pE1-6h-IML"/>
+                <outlet property="ratingLbl" destination="oyK-3z-ZUg" id="kxT-3E-bmP"/>
+                <outlet property="specialityLbl" destination="Hoz-3Z-W7q" id="AGz-HO-qA5"/>
+            </connections>
+            <point key="canvasLocation" x="158.69565217391306" y="125.22321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doctor7" width="6870" height="5304"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

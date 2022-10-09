@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="144" id="KGk-i7-Jjw" customClass="CardiologistTableViewCell" customModule="BookAppointment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpQ-Ly-jyR">
+                        <rect key="frame" x="10" y="10" width="306" height="124"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="doctor5" translatesAutoresizingMaskIntoConstraints="NO" id="fC1-i0-JLO">
+                                <rect key="frame" x="15" y="15" width="96" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="Sc9-xt-nyw"/>
+                                    <constraint firstAttribute="width" constant="96" id="rIh-VD-UwP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jme-9x-hyG">
+                                <rect key="frame" x="126" y="15" width="160" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ST9-RX-d5K">
+                                <rect key="frame" x="126" y="40" width="160" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ao-S6-ZVL">
+                                <rect key="frame" x="126" y="59" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az8-Ax-SGO">
+                                <rect key="frame" x="181.5" y="59" width="104.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOQ-ze-uDd">
+                                <rect key="frame" x="126" y="86" width="110.5" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Ec5-A3-KkX"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="phone.fill" catalog="system" title="Call Doctor">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="91%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEL-Ba-qWc">
+                                <rect key="frame" x="49" y="103" width="28" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.34548080780000001" green="0.18221037979999999" blue="0.23339377119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Ao-S6-ZVL" firstAttribute="top" secondItem="ST9-RX-d5K" secondAttribute="bottom" constant="5" id="AEo-Lj-CIM"/>
+                            <constraint firstItem="IEL-Ba-qWc" firstAttribute="top" secondItem="fC1-i0-JLO" secondAttribute="bottom" constant="5" id="B9a-Qw-dDI"/>
+                            <constraint firstItem="8Ao-S6-ZVL" firstAttribute="leading" secondItem="ST9-RX-d5K" secondAttribute="leading" id="JKa-rs-4ZX"/>
+                            <constraint firstItem="az8-Ax-SGO" firstAttribute="trailing" secondItem="ST9-RX-d5K" secondAttribute="trailing" id="JMM-Xy-qhS"/>
+                            <constraint firstItem="Jme-9x-hyG" firstAttribute="leading" secondItem="fC1-i0-JLO" secondAttribute="trailing" constant="15" id="M0B-lw-wAK"/>
+                            <constraint firstItem="ST9-RX-d5K" firstAttribute="leading" secondItem="Jme-9x-hyG" secondAttribute="leading" id="T7V-rW-cUl"/>
+                            <constraint firstItem="az8-Ax-SGO" firstAttribute="top" secondItem="8Ao-S6-ZVL" secondAttribute="top" id="WYd-b6-2Ea"/>
+                            <constraint firstAttribute="trailing" secondItem="Jme-9x-hyG" secondAttribute="trailing" constant="20" id="fPb-Nb-SmE"/>
+                            <constraint firstItem="fC1-i0-JLO" firstAttribute="top" secondItem="DpQ-Ly-jyR" secondAttribute="top" constant="15" id="g9l-li-HAG"/>
+                            <constraint firstItem="MOQ-ze-uDd" firstAttribute="bottom" secondItem="IEL-Ba-qWc" secondAttribute="bottom" id="gPd-Rq-56d"/>
+                            <constraint firstItem="IEL-Ba-qWc" firstAttribute="centerX" secondItem="fC1-i0-JLO" secondAttribute="centerX" id="gzX-nI-PHw"/>
+                            <constraint firstItem="ST9-RX-d5K" firstAttribute="trailing" secondItem="Jme-9x-hyG" secondAttribute="trailing" id="hfq-iD-axe"/>
+                            <constraint firstAttribute="bottom" secondItem="IEL-Ba-qWc" secondAttribute="bottom" constant="10" id="l9R-FG-U2k"/>
+                            <constraint firstItem="MOQ-ze-uDd" firstAttribute="leading" secondItem="Jme-9x-hyG" secondAttribute="leading" id="nbN-yr-isY"/>
+                            <constraint firstItem="fC1-i0-JLO" firstAttribute="leading" secondItem="DpQ-Ly-jyR" secondAttribute="leading" constant="15" id="pVJ-vh-EdY"/>
+                            <constraint firstItem="Jme-9x-hyG" firstAttribute="top" secondItem="fC1-i0-JLO" secondAttribute="top" id="qGv-65-pj3"/>
+                            <constraint firstItem="ST9-RX-d5K" firstAttribute="top" secondItem="Jme-9x-hyG" secondAttribute="bottom" constant="5" id="rm4-Sy-Xk0"/>
+                            <constraint firstItem="az8-Ax-SGO" firstAttribute="leading" secondItem="8Ao-S6-ZVL" secondAttribute="trailing" constant="20" id="tUn-Ck-5B5"/>
+                            <constraint firstItem="MOQ-ze-uDd" firstAttribute="top" secondItem="8Ao-S6-ZVL" secondAttribute="bottom" constant="10" id="yPI-0b-83c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DpQ-Ly-jyR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Oxg-85-mWw"/>
+                    <constraint firstItem="DpQ-Ly-jyR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Sxf-Nk-NN4"/>
+                    <constraint firstAttribute="trailing" secondItem="DpQ-Ly-jyR" secondAttribute="trailing" constant="10" id="bur-LH-ohs"/>
+                    <constraint firstAttribute="bottom" secondItem="DpQ-Ly-jyR" secondAttribute="bottom" constant="10" id="iEb-sJ-HGx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="callDoctorButton" destination="MOQ-ze-uDd" id="ckh-xj-rXP"/>
+                <outlet property="clinicNameLbl" destination="ST9-RX-d5K" id="7b0-Ed-QXw"/>
+                <outlet property="containerView" destination="DpQ-Ly-jyR" id="xyC-x3-wep"/>
+                <outlet property="doctorImageView" destination="fC1-i0-JLO" id="xrY-TZ-rHI"/>
+                <outlet property="doctorNameLbl" destination="Jme-9x-hyG" id="faH-DU-tcz"/>
+                <outlet property="expYearLbl" destination="8Ao-S6-ZVL" id="lqV-sD-8b5"/>
+                <outlet property="feesLbl" destination="az8-Ax-SGO" id="6OY-Ur-kAp"/>
+                <outlet property="ratingLbl" destination="IEL-Ba-qWc" id="TmC-i9-Ish"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="doctor5" width="4800" height="3301"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
